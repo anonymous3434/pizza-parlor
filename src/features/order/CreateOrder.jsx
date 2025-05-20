@@ -61,7 +61,7 @@ function CreateOrder() {
           </div>
         </div>
 
-        <div className="relative mb-4 flex flex-col items-center gap-2 sm:flex-row">
+        <div className="relative mb-4 flex flex-col gap-2 sm:flex-row">
           <label className="sm:basis-40">Address</label>
           <div className="grow">
             <input
@@ -82,7 +82,7 @@ function CreateOrder() {
           {!position?.latitude && !position?.longitude && (
             <Button
               type="small"
-              className="absolute right-[5px] top-[7px] z-50"
+              className="absolute right-[5px] top-10 z-50 sm:top-[7px]"
               disabled={isLoadingPosition}
               onClick={(e) => {
                 e.preventDefault();
